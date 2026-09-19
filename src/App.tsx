@@ -1,4 +1,8 @@
 export default function App() {
+  const phone = "+2347084547988";
+  const phoneDisplay = "+234 708 454 7988";
+  const waLink = "https://wa.me/2347084547988?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation.";
+
   return (
     <>
       {/* Preview notice bar */}
@@ -10,7 +14,7 @@ export default function App() {
       <header className="site-header">
         <span className="firm-name">[Firm name]</span>
         <a
-          href="tel:+2348000000000"
+          href={`tel:${phone}`}
           className="header-call"
           aria-label="Call the chambers"
         >
@@ -39,14 +43,14 @@ export default function App() {
           </p>
           <div className="hero-buttons">
             <a
-              href="https://wa.me/2348000000000?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation."
+              href={waLink}
               className="btn btn-primary"
               target="_blank"
               rel="noopener noreferrer"
             >
               Book a consultation
             </a>
-            <a href="tel:+2348000000000" className="btn btn-secondary">
+            <a href={`tel:${phone}`} className="btn btn-secondary">
               Call the chambers
             </a>
           </div>
@@ -193,12 +197,12 @@ export default function App() {
           </p>
           <p className="contact-line">
             <strong>Phone:</strong>{' '}
-            <a href="tel:+2348000000000">+234 800 000 0000</a>
+            <a href={`tel:${phone}`}>{phoneDisplay}</a>
           </p>
           <p className="contact-line">
             <strong>WhatsApp:</strong>{' '}
             <a
-              href="https://wa.me/2348000000000?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation."
+              href={waLink}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -208,7 +212,7 @@ export default function App() {
         </div>
         <div className="contact-buttons">
           <a
-            href="https://wa.me/2348000000000?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation."
+            href={waLink}
             className="btn btn-whatsapp"
             target="_blank"
             rel="noopener noreferrer"
@@ -233,11 +237,11 @@ export default function App() {
 
       {/* Sticky bottom bar (mobile only) */}
       <div className="sticky-bar" aria-label="Quick contact">
-        <a href="tel:+2348000000000" className="btn btn-call">
+        <a href={`tel:${phone}`} className="btn btn-call">
           Call
         </a>
         <a
-          href="https://wa.me/2348000000000?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation."
+          href={waLink}
           className="btn btn-wa"
           target="_blank"
           rel="noopener noreferrer"
